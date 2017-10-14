@@ -1,7 +1,7 @@
 <?php
 	header("Content-type:text/html;charset=utf-8");
 	$controller = isset($_GET['c']) ? $_GET['c'] : 'User' ;
-	$action =isset($_GET['a']) ? $_GET['a'] : 'login' ;
+	$action =isset($_GET['a']) ? $_GET['a'] : 'lists';
 	session_start();	
 	//自动加载
 	function __autoload($class) {	//当实例化一个不存在的类的时候php会自动执行
