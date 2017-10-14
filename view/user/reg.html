@@ -12,13 +12,17 @@
 	</style>
 </head>
 <body>
-<h1>登录</h1>
-<form action="index.php?c=User&a=doLogin" method="post">
-		<table > 
-			 <tr>
+<h1>注册</h1>
+<form  action="index.php?c=User&a=doReg" method="post">
+	<table> 
+			<tr>
 			 	<td>姓名:</td>
 			 	<td><input type="text" name="username"></td>
 			 </tr>
+	         <tr>
+	         	<td>年龄:</td>
+	         	<td><input type="text" name="age"></td>
+	         </tr>
 		     <tr>
 		     	<td>密码:	</td>
 		     	<td><input type="text" name="password"></td>
@@ -27,7 +31,7 @@
 			 	<td colspan="2" align="center"><input type="submit" name ="" value="yes"></td>
 			 </tr>
 		</table> 
+		<a href="index.php?c=User&a=login">返回</a>
 </form>
-	<a href="index.php?c=User&a=reg">去注册</a>
 </body>
 </html>
